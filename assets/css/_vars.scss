@@ -1,0 +1,121 @@
+
+/*------------------------------------*\
+    $OBJECTS-AND-ABSTRACTIONS
+\*------------------------------------*/
+/**
+ * All of inuit.css’ objects and abstractions are initially turned off by
+ * default. This means that you start any project with as little as possible,
+ * and introducing objects and abstractions is as simple as switching the
+ * following variables to `true`.
+ */
+$use-grids:         true;
+$use-nav:           true;
+$use-media:         true;
+$use-breadcrumb:	true;
+$use-split:			true;
+$use-flexbox:       true;
+
+
+
+/*------------------------------------*\
+    $OVERRIDES
+\*------------------------------------*/
+/**
+ * Place any variables that should override inuit.css’ defaults here.
+ */
+
+
+/**
+ * Base stuff
+ */
+$base-font-size:    16px;
+$base-line-height:  19px;
+$base-spacing-unit: 20px;
+
+
+/**
+ * Responsiveness?
+ * Tell inuit.css when breakpoints start, in pixels.
+ */
+
+$mobile-first:		true;
+
+$lap-start:         669px;
+$desk-start:        960px;
+$desk-large-start:	1100px;
+$desk-wide-start:   1201px;
+
+$breakpoints: (
+    'palm' '(max-width: 668px)',
+    'lap' '(min-width: 669px) and (max-width: 959px)',
+    'portable' '(max-width: 959px)',
+    'desk' '(min-width: 960px)',
+    'desk-large' '(min-width: 1070px)',
+    'desk-wide' '(min-width: 1200px)'
+);
+
+$use-silent-classes: true;
+
+/**
+ * Would you like push and pull classes enabled?
+ */
+$push:              false;
+$pull:              false;
+
+
+/**
+ * Font-sizes (in pixels). Refer to relevant sections for their implementations.
+ */
+$giga-size:         96px;
+$mega-size:         64px;
+$kilo-size:         48px;
+
+$h1-size:           40px; // .alpha
+$h2-size:           32px; // .beta
+$h3-size:           24px; // .gamma
+$h4-size:           20px; // .delta
+$h5-size:           14px; // .epsilon
+$h6-size:           10px; // .zeta
+
+$milli-size:        12px;
+$micro-size:        10px;
+
+
+/**
+ * Brand stuff
+ */
+$heading-font:				'Open Sans', sans-serif;
+$body-font:					'Open Sans', sans-serif;
+
+$heading-colour: 			#000;
+$body-colour:				#000;
+
+
+
+/*------------------------------------*\
+    $CUSTOM
+\*------------------------------------*/
+/**
+ * Place any of your own variables that sit on top of inuit.css here.
+ */
+
+//$default-face:				"Museo-sans-rounded", Helvetica, Arial, sans-serif;
+
+
+// Metrics
+$page-max-width: 1400px;
+$page-min-width: 300px;
+
+
+
+/*------------------------------------*\
+    $loops
+\*------------------------------------*/
+
+// Empty variables for use within loops
+$state-name: '';
+$state-colour: '';
+
+// Section colour array order: section, section-colour
+$states: (stop,red), (ready,yellow), (go,green);
+

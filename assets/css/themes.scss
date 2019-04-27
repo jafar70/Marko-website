@@ -1,0 +1,17 @@
+/* 
+	This file exists purely to separate our CSS into 2 different files 
+	(to work around IE's 4095 rules-per-stylesheet "feature").
+
+	Themes.scss includes all accent colour and department colour specific styles.
+	Style.scss contains everything else.
+
+	If you want to add any accent or department colour styles to the project 
+	(basically anything you'll use '@include loop-accents' or '@include loop-departments' for),
+	please put them OUTSIDE the '@if $themes == false' condition that you'll see in 
+	all of the component & layout files.
+*/
+
+$themes: true;
+
+@import "vars";
+@import "build";

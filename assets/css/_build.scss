@@ -1,0 +1,58 @@
+﻿@charset "UTF-8";
+/*------------------------------------*\
+    STYLE.CSS
+\*------------------------------------*/
+/**
+ *
+ * sass --watch style.scss:style.min.css --style compressed
+ *
+ * Here we pull in some variables, include the inuit.css framework, then add our
+ * project-specific components afterwards.
+ */
+
+
+/**
+ * Setup
+ */
+@import "ui/mixins";
+
+
+/**
+ * She's all yours, cap'n... Begin importing your stuff here.
+ */
+
+/*------------------------------------*\
+    $DEFAULT
+\*------------------------------------*/
+
+@import "ui/fonts"; // @font-faces
+@import "ui/base"; // base styles
+@import "ui/layout"; // main page layout
+@import "ui/common"; // common or miscellaneous styles
+
+
+/*------------------------------------*\
+    $HELPERS
+\*------------------------------------*/
+
+
+
+
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+// Main page structure stuff (eg. header & footer) and large-scale layouts
+
+@import "ui/layout/site-header";
+@import "ui/layout/site-footer";
+@import "ui/layout/home";
+
+
+/*------------------------------------*\
+    $COMPONENTS
+\*------------------------------------*/
+
+@import "ui/components/carousel";
+@import "ui/components/slick";
+@import "ui/components/slick-theme";
+

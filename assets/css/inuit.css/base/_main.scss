@@ -1,0 +1,64 @@
+/*------------------------------------*\
+    $MAIN
+\*------------------------------------*/
+
+html {
+    font:#{($base-font-size/16px)*1em}/#{$line-height-ratio} $base-font-family;
+    //    overflow-y:scroll;
+    //    overflow-x: hidden;
+    min-height: 100%;
+    font-family: Soleil !important;
+}
+
+body {
+    background-color: #fff;
+    margin-top: 60px;
+}
+
+
+#about-me {
+    padding-top: 40px;
+    .back-arrow {
+        width: 26px;
+    }
+    h3 {
+        font-weight: bold;
+        text-transform: uppercase;
+        border-top: 1px solid #000;
+        margin: 20px 20px 0 0;
+        padding-top: 20px;
+    }
+    .about-me-text {
+        border-top: 1px solid #000;
+        padding-top: 20px;
+        margin-top: 46px;
+        p {
+            font-size: 16px;
+        }
+        img {
+            margin: 30px 0 60px;
+        }
+    }
+}
+
+#contact{
+    padding-top: 40px;
+    .back-arrow {
+        width: 26px;
+    }
+    h3 {
+        font-weight: bold;
+        text-transform: uppercase;
+        border-top: 1px solid #000;
+        margin: 20px 20px 0 0;
+        padding-top: 20px;
+    }
+    .contact-form-container {
+        border-top: 1px solid #000;
+        padding-top: 20px;
+        margin: 46px 0;
+        h4{
+            margin-bottom: 40px;
+        }
+    }
+}

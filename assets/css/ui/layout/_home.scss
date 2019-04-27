@@ -1,0 +1,29 @@
+/// <reference file="../vars" />
+
+
+@if $themes == false {
+	
+	// h1 {
+	// 	color: red;
+	// }
+	
+	// ul {
+	// 	list-style-type: none;
+	// 	li {
+	// 		padding: 50px;
+	// 		width: 50px;
+	// 		height: 50px;
+	// 		margin-bottom: 10px;
+ //           text-align: center;
+	// 	}
+	// }
+
+} @else {
+	
+	.traffic-light {
+		@include loop-colours(parent) {
+			background-color: $state-colour;
+		}
+	}
+
+}
