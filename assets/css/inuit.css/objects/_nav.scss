@@ -238,7 +238,7 @@
 
     .nav-center {
         position: absolute;
-        left: 43%; // width: 40px;
+        left: 45%; // width: 40px;
         margin-left: -20px;
         margin-top: 19px;
         /* halve the width of the image */
@@ -266,8 +266,10 @@
     }
 
     .change .bar1 {
-        -webkit-transform: rotate(-45deg) translate(-6px, 4px);
-        transform: rotate(-45deg) translate(-6px, 4px);
+        -webkit-transform: translateY(9px);
+        -o-transform: translateY(9px);
+        -ms-transform: translateY(9px);
+        transform: translateY(9px);
         background-color: #fff !important;
     }
 
@@ -276,8 +278,10 @@
     }
 
     .change .bar3 {
-        -webkit-transform: rotate(45deg) translate(-11px, -8px);
-        transform: rotate(45deg) translate(-11px, -8px);
+        -webkit-transform: translateY(-11px) rotate(90deg);
+        -o-transform: translateY(-11px) rotate(90deg);
+        -ms-transform: translateY(-11px) rotate(90deg);
+        transform: translateY(-11px) rotate(90deg);
         background-color: #fff !important;
     }
 
@@ -325,8 +329,16 @@
             font-size: 15px;
             font-weight: 400;
         }
+        
     }
 
+    .white{
+            color: #fff !important;
+        }
+        
+    .white-svg{
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+    }
     #services-mobile-nav>div>div.nav-center>a>h2 {
         color: #ff00c6;
     }
@@ -663,6 +675,7 @@
         color: #FFF;
         text-decoration: none;
         overflow: hidden;
+        text-transform: uppercase;
     }
     //    .overlay ul li a:hover:after,
     //    .overlay ul li a:focus:after,

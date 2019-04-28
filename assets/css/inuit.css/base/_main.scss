@@ -7,7 +7,7 @@ html {
     //    overflow-y:scroll;
     //    overflow-x: hidden;
     min-height: 100%;
-    font-family: Soleil !important;
+   font-family: 'Karla', sans-serif !important;
 }
 
 body {
@@ -59,6 +59,41 @@ body {
         margin: 46px 0;
         h4{
             margin-bottom: 40px;
+        }
+    }
+}
+
+#portfolio-single-body{
+   padding-top: 40px;
+    .back-arrow {
+        width: 26px;
+    }
+    h3 {
+        font-weight: bold;
+        text-transform: uppercase;
+        border-top: 1px solid #000;
+        margin: 20px 20px 0 0;
+        padding-top: 20px;
+    }
+    .portfolio-text {
+        border-top: 1px solid #000;
+        padding-top: 20px;
+        margin-top: 27px;
+        p {
+            font-size: 16px;
+        }
+        img {
+            margin: 30px 0 60px;
+        }
+    } 
+    .portfolio-category{
+        ul{
+            list-style-type: none;
+            li{
+                font-size: 16px;
+                display: inline-block;
+                margin-right: 20px;
+            }
         }
     }
 }
