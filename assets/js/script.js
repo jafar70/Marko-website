@@ -3,6 +3,7 @@ $(document).ready(function () {
     $('#toggle').click(function () {
         $(this).toggleClass('active');
         $('#overlay').toggleClass('open');
+        $('body').toggleClass('clear');
         $('.nav').toggleClass('nav-transparent');
         $('.nav-center>a>h2').toggleClass('white');
         $('.nav-right>a>img').toggleClass('white-svg');

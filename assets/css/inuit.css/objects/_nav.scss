@@ -216,18 +216,22 @@
     }
     .nav-right {
         float: right;
-        margin-top: -26px;
+        margin-top: -3px;
     }
 
 
     .nav-transparent {
-        background-color: transparent !important;
+            background-color: transparent !important;
+    }
+    
+    .clear{
+        background-color: #fff !important;
     }
 
     .hamburger {
         display: inline-block;
         cursor: pointer;
-        margin-top: 11px;
+        margin-top: 29px;
         position: fixed;
         z-index: 999;
     }
@@ -240,7 +244,7 @@
         position: absolute;
         left: 43.5%; // width: 40px;
         margin-left: -20px;
-        margin-top: 19px;
+        margin-top: 40px;
         /* halve the width of the image */
     }
 
@@ -289,7 +293,7 @@
         width: 100%;
         font-size: 40px;
         line-height: 108px;
-        height: 60px;
+        height: 100px;
         background: #fff;
         color: #fff;
         -webkit-transition: all 0.4s ease;
