@@ -3,35 +3,45 @@
 \*------------------------------------*/
 
 html {
-    font:#{($base-font-size/16px)*1em}/#{$line-height-ratio} $base-font-family;
-    //    overflow-y:scroll;
+    font:#{($base-font-size/16px)*1em}/#{$line-height-ratio} $base-font-family; //    overflow-y:scroll;
     //    overflow-x: hidden;
     min-height: 100%;
-   font-family: 'Karla', sans-serif !important;
+    font-family: 'Karla', sans-serif !important;
 }
 
 body {
-    background-color: #fff;
+    background-color: #000;
     margin-top: 60px;
 }
 
+section {
+    background-color: #fff;
+}
+
+.back-arrow {
+    filter: invert(61%) sepia(57%) saturate(259%) hue-rotate(226deg) brightness(84%) contrast(82%);
+}
 
 #about-me {
     padding-top: 40px;
     .back-arrow {
-        width: 26px;
+        width: 45px;
+        margin-left: -7px;
+        transform: rotate(180deg);
     }
     h3 {
+        font-family: maple-web, sans-serif !important;
         font-weight: bold;
+        font-size: 17px;
         text-transform: uppercase;
         border-top: 1px solid #000;
-        margin: 20px 20px 0 0;
+        margin: 17px 20px 0 0;
         padding-top: 20px;
     }
     .about-me-text {
         border-top: 1px solid #000;
         padding-top: 20px;
-        margin-top: 46px;
+        margin-top: 41px;
         p {
             font-size: 16px;
         }
@@ -41,39 +51,53 @@ body {
     }
 }
 
-#contact{
-    padding-top: 40px;
+#contact {
+    padding: 40px 0 400px;
+    @media screen and (max-width: $desk-start) {
+        padding: 40px 0 40px;
+    }
     .back-arrow {
-        width: 26px;
+        width: 45px;
+        margin-left: -7px;
+        transform: rotate(180deg);
     }
     h3 {
+        font-family: maple-web, sans-serif !important;
         font-weight: bold;
+        font-size: 17px;
         text-transform: uppercase;
         border-top: 1px solid #000;
-        margin: 20px 20px 0 0;
+        margin: 17px 20px 0 0;
         padding-top: 20px;
     }
     .contact-form-container {
         border-top: 1px solid #000;
         padding-top: 20px;
-        margin: 46px 0;
-        h4{
+        margin: 40px 0;
+        h4 {
             margin-bottom: 40px;
+            font-family: 'Karla', sans-serif !important;
+            font-weight: bold;
+            font-size: 17px;
         }
     }
 }
 
-#portfolio-single-body{
-   padding-top: 40px;
+#portfolio-single-body {
+    padding-top: 40px;
     .back-arrow {
-        width: 26px;
+        width: 45px;
+        margin-left: -7px;
+        transform: rotate(180deg);
     }
     h3 {
+        font-family: maple-web, sans-serif !important;
         font-weight: bold;
+        font-size: 17px;
         text-transform: uppercase;
         border-top: 1px solid #000;
         margin: 20px 20px 0 0;
-        padding-top: 20px;
+        padding-top: 22px;
     }
     .portfolio-text {
         border-top: 1px solid #000;
@@ -85,15 +109,62 @@ body {
         img {
             margin: 30px 0 60px;
         }
-    } 
-    .portfolio-category{
-        ul{
+    }
+    .portfolio-category {
+        ul {
             list-style-type: none;
-            li{
+            li {
                 font-size: 16px;
                 display: inline-block;
                 margin-right: 20px;
             }
+        }
+    }
+    .next-post-link {
+        color: #a086be;
+        position: relative;
+        &:after {
+            background: url(../../assets/img/Arrowicon-P-08.svg) no-repeat bottom;
+            content: "";
+            width: 40px;
+            margin-left: 100px;
+            background-size: 34px;
+            position: absolute;
+            height: 40px;
+            bottom: 1%;
+        }
+    }
+}
+
+#home-portfolio {
+    .grid__item {
+        padding: 20px 20px 0 20px;
+        @media only screen and (max-width: $lap-start) {
+            padding: 20px 20px 0 40px !important;
+        }
+        &:nth-child(3n) {
+            padding-right: 0;
+            @media only screen and (max-width: $desk-start) {
+                padding-right: 20px;
+            }
+            @media only screen and (max-width: $lap-start) {
+                padding-right: 0px;
+            }
+        }
+        &:nth-child(2n) {
+            @media only screen and (max-width: $desk-start) {
+                padding-right: 0;
+            }
+        }
+        @media only screen and (max-width: $lap-start) {
+            padding-right: 0px;
+        }
+    }
+    padding-bottom: 20px;
+    .home-portfolio-container {
+        padding: 0 40px;
+        @media only screen and (max-width: $lap-start) {
+            padding: 0 20px;
         }
     }
 }

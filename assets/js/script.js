@@ -16,6 +16,11 @@ function myFunction(x) {
 
 var swiper = new Swiper('.swiper-container', {
       slidesPerView: 'auto',
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      direction: 'horizontal',
       centeredSlides: true,
       spaceBetween: 30,
       pagination: {

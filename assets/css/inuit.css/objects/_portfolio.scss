@@ -1,28 +1,30 @@
 .content {
-  position: relative;
-    max-width:377px;
+  position: relative; // max-width:377px;
   width: 100%;
   margin: auto;
   overflow: hidden;
-  height: 377px;
-    background-repeat:no-repeat !important;
-    background-size:cover !important;
-    background-position: center !important; 
+  height: 19vw;
+  @media only screen and (max-width: $desk-start) {
+    height: 260px;
+  }
+  background-repeat:no-repeat !important;
+  background-size:cover !important;
+  background-position: center !important;
 }
 
-@media only screen and (max-width: $desk-start){
-    .content {
-        max-width:100%;
-    }
+@media only screen and (max-width: $desk-start) {
+  .content {
+    max-width: 100%;
+  }
 }
 
-.orange-overlay{
-   background: rgba(255, 170, 0,0.7) !important; 
+.orange-overlay {
+  background: rgba(255, 170, 0, 0.7) !important;
 }
 
 
 .content .content-overlay {
-  background: rgba(255, 255, 255,0.8);
+  background: rgba(255, 255, 255, 0.8);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -36,19 +38,19 @@
   transition: all 0.4s ease-in-out 0s;
 }
 
-.content:hover .content-overlay{
+.content:hover .content-overlay {
   opacity: 1;
 }
 
 .content-image {
-    width: 100%;
+  width: 100%;
 }
 
-@media only screen and (max-width: $desk-start){
-    .content-image {
-        width: 100%;
-        height: 100%;
-    }
+@media only screen and (max-width: $desk-start) {
+  .content-image {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .content-details {
@@ -68,40 +70,40 @@
   transition: all 0.3s ease-in-out 0s;
 }
 
-.content:hover .content-details{
+.content:hover .content-details {
   top: 50%;
   left: 50%;
   opacity: 1;
 }
 
 
-.content-details h3{
+.content-details h3 {
   color: #000;
   font-weight: 600;
   margin-bottom: 0.5em;
   text-transform: capitalize;
 }
 
-.content-details p{
+.content-details p {
   color: #000;
   font-size: 1em;
 }
 
-.content-text{
-    color: #fff;
+.content-text {
+  color: #fff;
   font-size: 14px !important;
 }
 
-.fadeIn-bottom{
+.fadeIn-bottom {
   top: 80%;
 }
 
-@media only screen and (max-width: $desk-start){
-    #team-grid > div{
-        padding-left: 0;
-    }
+@media only screen and (max-width: $desk-start) {
+  #team-grid>div {
+    padding-left: 0;
+  }
 }
 
-.black-underline{
-    background-color: #000;
+.black-underline {
+  background-color: #000;
 }
