@@ -19,7 +19,7 @@ section {
 }
 
 .back-arrow {
-    filter: invert(61%) sepia(57%) saturate(259%) hue-rotate(226deg) brightness(84%) contrast(82%);
+    // filter: invert(61%) sepia(57%) saturate(259%) hue-rotate(226deg) brightness(84%) contrast(82%);
 }
 
 #about-me {
@@ -32,7 +32,7 @@ section {
     h3 {
         font-family: maple-web, sans-serif !important;
         font-weight: bold;
-        font-size: 17px;
+        font-size: 20px;
         text-transform: uppercase;
         border-top: 1px solid #000;
         margin: 17px 20px 0 0;
@@ -41,7 +41,7 @@ section {
     .about-me-text {
         border-top: 1px solid #000;
         padding-top: 20px;
-        margin-top: 41px;
+        margin-top: 39.5px;
         p {
             font-size: 16px;
         }
@@ -64,11 +64,14 @@ section {
     h3 {
         font-family: maple-web, sans-serif !important;
         font-weight: bold;
-        font-size: 17px;
+        font-size: 20px;
         text-transform: uppercase;
         border-top: 1px solid #000;
         margin: 17px 20px 0 0;
-        padding-top: 20px;
+        padding-top: 22px;
+        @media screen and (max-width: $desk-start) {
+            margin: 17px 0 0 0;
+        }
     }
     .contact-form-container {
         border-top: 1px solid #000;
@@ -77,8 +80,6 @@ section {
         h4 {
             margin-bottom: 40px;
             font-family: 'Karla', sans-serif !important;
-            font-weight: bold;
-            font-size: 17px;
         }
     }
 }
@@ -93,18 +94,21 @@ section {
     h3 {
         font-family: maple-web, sans-serif !important;
         font-weight: bold;
-        font-size: 17px;
+        font-size: 20px;
         text-transform: uppercase;
         border-top: 1px solid #000;
-        margin: 20px 20px 0 0;
+        margin: 18px 20px 0 0;
         padding-top: 22px;
+        @media screen and (max-width: $desk-start) {
+            margin: 17px 0 0 0;
+        }
     }
     .portfolio-text {
         border-top: 1px solid #000;
         padding-top: 20px;
-        margin-top: 27px;
+        margin-top: 23.8px;
         p {
-            font-size: 16px;
+            font-size: 15px;
         }
         img {
             margin: 30px 0 60px;
@@ -114,7 +118,7 @@ section {
         ul {
             list-style-type: none;
             li {
-                font-size: 16px;
+                font-size: 15px;
                 display: inline-block;
                 margin-right: 20px;
             }
@@ -126,14 +130,29 @@ section {
         &:after {
             background: url(../../assets/img/Arrowicon-P-08.svg) no-repeat bottom;
             content: "";
-            width: 40px;
-            margin-left: 100px;
+            width: 40px; // margin-left: 100px;
             background-size: 34px;
             position: absolute;
             height: 40px;
             bottom: 1%;
         }
     }
+
+    .previous-post-link {
+        color: #a086be;
+        position: relative;
+        &:before {
+            background: url(../../assets/img/ArrowIconLeft-18.svg) no-repeat bottom;
+            content: "";
+            width: 40px;
+            background-size: 35px;
+            position: absolute;
+            height: 40px;
+            bottom: 1%;
+            margin-left: -40px;
+        }
+    }
+
 }
 
 #home-portfolio {
@@ -143,7 +162,7 @@ section {
             padding: 20px 20px 0 40px !important;
         }
         &:nth-child(3n) {
-            padding-right: 0;
+            // padding-right: 0;
             @media only screen and (max-width: $desk-start) {
                 padding-right: 20px;
             }
@@ -162,9 +181,24 @@ section {
     }
     padding-bottom: 20px;
     .home-portfolio-container {
-        padding: 0 40px;
+        padding: 0 20px 0 40px;
         @media only screen and (max-width: $lap-start) {
             padding: 0 20px;
         }
     }
+}
+
+.lightboxOverlay {
+    position: fixed !important;
+}
+
+.lb-dataContainer {
+    padding-bottom: 20px;
+}
+
+.lb-data .lb-close {
+    position: absolute;
+    display: inline-block !important;
+    top: -35px;
+    margin-left: 10px;
 }

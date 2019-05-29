@@ -15,9 +15,7 @@
 </head>
 
 <body>
-
-
-    <nav class="nav" >
+    <nav class="nav">
         <div class="nav-container">
             <div class="nav-left">
                 <div id="toggle" class="hamburger" onclick="myFunction(this)">
@@ -29,13 +27,13 @@
 
             <div class="nav-center">
                 <a href="#!" class="logo-calm">
-                    <h2>Markovačevič <span>Creative Designer</span></h2>
+                    <img src="assets/img/MKLogoB-16.svg">
                 </a>
             </div>
 
 
             <div class="nav-right">
-                <a href=""><img src="assets/img/CViconv2B-14.svg"></a>
+                <a href=""><img src="assets/img/CV-icon-B-02.svg"></a>
                 <a href=""><img src="assets/img/Instagramicon-B-05.svg" alt=""></a>
                 <a href=""><img src="assets/img/LinkedIn-icon-B-04.svg" alt=""></a>
             </div>
@@ -45,7 +43,7 @@
     <div class="overlay" id="overlay">
         <nav class="overlay-menu">
             <ul>
-                <li><a href="index.html">Work</a></li>
+                <li class="active"><a href="index.html">Work</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="#!">CV</a></li>
@@ -55,138 +53,163 @@
 
     <section id="home-portfolio">
         <div class="home-portfolio-container">
-        <div class='grid' style="font-size:0;">
-            <div class="grid__item desk-one-third lap-one-half palm-one-whole mb-20">
-                <div class="content" style='background-image: url("https://placehold.it/500x500");'>
-                    <a href="portfolio-single.html">
-                        <div class="content-overlay"></div>
-                        <div class="content-details fadeIn-bottom">
-                           <h3 class="content-title">Project 1</h3>
-                        </div>
-                    </a>
+            <div class='grid' style="font-size:0;">
+                <div class="filter-containter mb-15">
+                    <p id="filter-menu">Filter</p>
+                    <ul class="nav-wrapper">
+                        <li>
+                            <ul id="nav-bar">
+                                <li><span class="filter active" data-filter=".branding, .print, .web, .animation, .illustration , .music, .clothing">All</span></li>
+                                <li><span class="filter" data-filter=".branding">Branding</span></li>
+                                <li><span class="filter" data-filter=".print">Print</span></li>
+                                <li><span class="filter" data-filter=".web">Web</span></li>
+                                <li><span class="filter" data-filter=".animation">Animation</span></li>
+                                <li><span class="filter" data-filter=".illustration">Illustration</span></li>
+                                <li><span class="filter" data-filter=".music">Music</span></li>
+                                <li><span class="filter" data-filter=".clothing">Clothing</span></li>
+                            </ul>
+                        </li>
+                        <li id="menu">
+                            <li>
+                    </ul>
                 </div>
+                
+                <!--<hr class="black-border mb-15"/>-->
+                
+                <div id="portfoliolist">
 
-            </div>
-            <!--
+                    <div class="portfolio grid__item desk-one-third lap-one-half palm-one-whole mb-20 branding" data-cat="branding">
+                        <div class="content" style='background-image: url("https://placehold.it/500x500");'>
+                            <a href="portfolio-single.html">
+                                <div class="content-overlay"></div>
+                                <div class="content-details fadeIn-bottom">
+                                    <h3 class="content-title">Project 1</h3>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!--
 
  -->
-            <div class="grid__item desk-one-third lap-one-half palm-one-whole mb-20">
-                <div class="content" style='background-image: url("https://placehold.it/500x500");'>
-                    <a href="portfolio-single.html">
-                        <div class="content-overlay"></div>
-                        <div class="content-details fadeIn-bottom">
-                           <h3 class="content-title">Project 2</h3>
+                    <div class="portfolio grid__item desk-one-third lap-one-half palm-one-whole mb-20 print" data-cat="print">
+                        <div class="content" style='background-image: url("https://placehold.it/500x500");'>
+                            <a href="portfolio-single.html">
+                                <div class="content-overlay"></div>
+                                <div class="content-details fadeIn-bottom">
+                                    <h3 class="content-title">Project 2</h3>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
 
-            </div>
-            <!--
+                    </div>
+                    <!--
 
  -->
-            <div class="grid__item desk-one-third lap-one-half palm-one-whole mb-20">
-                <div class="content" style='background-image: url("https://placehold.it/500x500");'>
-                    <a href="portfolio-single.html">
-                        <div class="content-overlay"></div>
-                        <div class="content-details fadeIn-bottom">
-                           <h3 class="content-title">Project 3</h3>
+                    <div class="portfolio grid__item desk-one-third lap-one-half palm-one-whole mb-20 web" data-cat="web">
+                        <div class="content" style='background-image: url("https://placehold.it/500x500");'>
+                            <a href="portfolio-single.html">
+                                <div class="content-overlay"></div>
+                                <div class="content-details fadeIn-bottom">
+                                    <h3 class="content-title">Project 3</h3>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
 
 
-            </div>
-            <!--
+                    </div>
+                    <!--
 
  -->
-            <div class="grid__item desk-one-third lap-one-half palm-one-whole mb-20">
-                <div class="content" style='background-image: url("https://placehold.it/500x500");'>
-                    <a href="portfolio-single.html">
-                        <div class="content-overlay"></div>
-                        <div class="content-details fadeIn-bottom">
-                           <h3 class="content-title">Project 4</h3>
+                    <div class="portfolio grid__item desk-one-third lap-one-half palm-one-whole mb-20 animation" data-cat="animation">
+                        <div class="content" style='background-image: url("https://placehold.it/500x500");'>
+                            <a href="portfolio-single.html">
+                                <div class="content-overlay"></div>
+                                <div class="content-details fadeIn-bottom">
+                                    <h3 class="content-title">Project 4</h3>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-            </div>
-            <!--
+                    </div>
+                    <!--
 
  -->
-           <div class="grid__item desk-one-third lap-one-half palm-one-whole mb-20">
-               <div class="content" style='background-image: url("https://placehold.it/500x500");'>
-                    <a href="portfolio-single.html">
-                        <div class="content-overlay"></div>
-                        <div class="content-details fadeIn-bottom">
-                           <h3 class="content-title">Project 5</h3>
+                    <div class="portfolio grid__item desk-one-third lap-one-half palm-one-whole mb-20 illustration" data-cat="illustration">
+                        <div class="content" style='background-image: url("https://placehold.it/500x500");'>
+                            <a href="portfolio-single.html">
+                                <div class="content-overlay"></div>
+                                <div class="content-details fadeIn-bottom">
+                                    <h3 class="content-title">Project 5</h3>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
 
 
 
-            </div>
-            <!--
+                    </div>
+                    <!--
 
  -->
-            <div class="grid__item desk-one-third lap-one-half palm-one-whole mb-20">
-                <div class="content" style='background-image: url("https://placehold.it/500x500");'>
-                    <a href="portfolio-single.html">
-                        <div class="content-overlay"></div>
-                        <div class="content-details fadeIn-bottom">
-                           <h3 class="content-title">Project 6</h3>
+                    <div class="portfolio grid__item desk-one-third lap-one-half palm-one-whole mb-20 music" data-cat="music">
+                        <div class="content" style='background-image: url("https://placehold.it/500x500");'>
+                            <a href="portfolio-single.html">
+                                <div class="content-overlay"></div>
+                                <div class="content-details fadeIn-bottom">
+                                    <h3 class="content-title">Project 6</h3>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
 
-            </div>
-            <!--
+                    </div>
+                    <!--
 
  -->
-            <div class="grid__item desk-one-third lap-one-half palm-one-whole mb-20">
-                <div class="content" style='background-image: url("https://placehold.it/500x500");'>
-                    <a href="portfolio-single.html">
-                        <div class="content-overlay"></div>
-                        <div class="content-details fadeIn-bottom">
-                           <h3 class="content-title">Project 7</h3>
+                    <div class="portfolio grid__item desk-one-third lap-one-half palm-one-whole mb-20 clothing" data-cat="clothing">
+                        <div class="content" style='background-image: url("https://placehold.it/500x500");'>
+                            <a href="portfolio-single.html">
+                                <div class="content-overlay"></div>
+                                <div class="content-details fadeIn-bottom">
+                                    <h3 class="content-title">Project 7</h3>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-            </div>
-            <!--
+                    </div>
+                    <!--
 
  -->
-            <div class="grid__item desk-one-third lap-one-half palm-one-whole mb-20">
-               <div class="content" style='background-image: url("https://placehold.it/500x500");'>
-                    <a href="portfolio-single.html">
-                        <div class="content-overlay"></div>
-                        <div class="content-details fadeIn-bottom">
-                            <h3 class="content-title">Project 8</h3>
+                    <div class="portfolio grid__item desk-one-third lap-one-half palm-one-whole mb-20 music" data-cat="music">
+                        <div class="content" style='background-image: url("https://placehold.it/500x500");'>
+                            <a href="portfolio-single.html">
+                                <div class="content-overlay"></div>
+                                <div class="content-details fadeIn-bottom">
+                                    <h3 class="content-title">Project 8</h3>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
 
 
 
-            </div>
-            <!--
+                    </div>
+                    <!--
 
  -->
-            <div class="grid__item desk-one-third lap-one-half palm-one-whole mb-20">
-                <div class="content" style='background-image: url("https://placehold.it/500x500");'>
-                    <a href="portfolio-single.html">
-                        <div class="content-overlay"></div>
-                        <div class="content-details fadeIn-bottom">
-                            <h3 class="content-title">Project 9</h3>
+                    <div class="portfolio grid__item desk-one-third lap-one-half palm-one-whole mb-20 music" data-cat="music">
+                        <div class="content" style='background-image: url("https://placehold.it/500x500");'>
+                            <a href="portfolio-single.html">
+                                <div class="content-overlay"></div>
+                                <div class="content-details fadeIn-bottom">
+                                    <h3 class="content-title">Project 9</h3>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
 
-            </div>
-            <!--
+                    </div>
+                    <!--
 
  -->
+                </div>
+            </div>
         </div>
-    </div>
     </section>
 
     <div class="footer-container">
@@ -201,10 +224,10 @@
  -->
                 <div class="grid__item one-half palm-one-whole">
                     <div class="footer-social-links">
-                    <a href=""><img src="assets/img/CViconv2B-14.svg"></a>
-                <a href=""><img src="assets/img/Instagramicon-B-05.svg" alt=""></a>
-                <a href=""><img src="assets/img/LinkedIn-icon-B-04.svg" alt=""></a>
-                </div>
+                        <a href=""><img src="assets/img/CV-icon-B-02.svg"></a>
+                        <a href=""><img src="assets/img/Instagramicon-B-05.svg" alt=""></a>
+                        <a href=""><img src="assets/img/LinkedIn-icon-B-04.svg" alt=""></a>
+                    </div>
                 </div>
                 <!--
 
@@ -217,6 +240,33 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.1/jquery.mixitup.min.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+
+            var filterList = {
+
+                init: function() {
+
+                    // MixItUp plugin
+                    // http://mixitup.io
+                    $('#portfoliolist').mixItUp({
+                        selectors: {
+                            target: '.portfolio',
+                            filter: '.filter'
+                        },
+                        load: {}
+                    });
+
+                }
+
+            };
+
+            // Run the show!
+            filterList.init();
+        });
+    </script>
 
 </body>
 

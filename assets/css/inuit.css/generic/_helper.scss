@@ -91,6 +91,9 @@
 .hard--ends     { padding-top:   0!important; padding-bottom:0!important; }
 .hard--sides    { padding-right: 0!important; padding-left:  0!important; }
 
+.border-none{
+  border-top: none !important;
+}
 
 /**
  * Pull items full width of `.island` parents.

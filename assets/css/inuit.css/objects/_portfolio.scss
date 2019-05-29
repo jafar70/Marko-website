@@ -79,9 +79,10 @@
 
 .content-details h3 {
   color: #000;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 0.5em;
   text-transform: capitalize;
+  font-size: 20px;
 }
 
 .content-details p {
@@ -106,4 +107,133 @@
 
 .black-underline {
   background-color: #000;
+}
+
+.filter-containter{
+  padding-bottom: 30px;
+  margin: 0 20px;
+  // border-bottom: 1px solid #000;
+}
+
+.filter-toggle{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#filters {
+	padding:0;
+	list-style:none;
+	    display: inline-block;
+    margin-bottom: -8px;
+     overflow: hidden;
+}
+
+	#filters li {
+		float:left;
+		font-size: 16px;
+		&:hover{
+		  span{
+		    color: #A186BE;
+		  }
+		}
+	}
+	
+	#filters li span {
+		display: block;
+		margin:5px 20px;		
+		text-decoration:none;
+		color:#000;
+		cursor: pointer;
+	}
+	
+	@media only screen and (max-width: $palm-end){
+	  #filters li span {
+		margin:5px 10px;
+	  }
+	}
+	
+	#filters li span.active {
+		background: #00ff67;
+		color:#fff;
+	}
+	
+	
+	#filter-menu {
+	  font-size: 20px;
+	  display: inline;
+	  float: left;
+	  padding-right: 10px;
+	  cursor: pointer;
+	}
+	
+	.nav-wrapper {
+    list-style: none;
+    float: left;
+}
+
+.nav-wrapper>li {
+    float: right;
+    overflow: hidden;
+    font-family: "Karla", sans-serif !important;
+    font-size: 20px;
+    letter-spacing: normal;
+}
+
+#portfoliolist .portfolio {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    display: none;
+    overflow: hidden;
+}
+
+#nav-bar li span.active {
+    color: #a186be;
+}
+
+#nav-bar li:hover span {
+    color: #A186BE;
+}
+
+#nav-bar li span {
+    cursor: pointer;
+}
+
+#nav-bar {
+    list-style: none;
+    margin-right: -885px;
+    transition: 0.3s;
+}
+
+.nav-wrapper.active #nav-bar {
+    margin-right: 0;
+    transition: 0.3s;
+}
+
+#nav-bar>li {
+        float: left;
+    font-size: 15px;
+    margin: 4px 20px
+}
+
+#menu::after {
+    display: block;
+    content: "+";
+    width: 10px;
+    font-size: 20px;
+    height: 20px;
+    color: #a086be;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.nav-wrapper.active>#menu::after {
+    content: "-";
+    color: #a086be;
+}
+
+
+.black-border {
+    border-top: 2px solid #000;
+    margin: 0 20px;
 }

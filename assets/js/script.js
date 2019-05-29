@@ -7,6 +7,7 @@ $(document).ready(function () {
         $('.nav').toggleClass('nav-transparent');
         $('.nav-center>a>h2').toggleClass('white');
         $('.nav-right>a>img').toggleClass('white-svg');
+        $('.nav-center>a>img').toggleClass('white-svg');
         $('#home').css('margin-top', '0');
     });
 });
@@ -29,3 +30,13 @@ var swiper = new Swiper('.swiper-container', {
         clickable: true,
       },
     });
+    
+
+$('#menu').click(function(){
+	$('.nav-wrapper').toggleClass('active');
+});
+
+$('#filter-menu').click(function(){
+	$('.nav-wrapper').toggleClass('active');
+});
+
