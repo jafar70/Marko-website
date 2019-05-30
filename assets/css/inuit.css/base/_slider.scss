@@ -36,6 +36,9 @@ body {
       align-items: center;
       cursor: e-resize;
       width: 50% !important;
+      @media only screen and (max-width: 960px) {
+        width: 100% !important;
+      }
       a{
           width: 100%;
           height: 100%;
