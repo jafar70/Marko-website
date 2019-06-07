@@ -126,6 +126,9 @@
     filter:alpha(opacity = 50)!important;
 }
 
+a{
+  outline:none !important;
+}
 
 /**
  * Align items to the right where they imply progression/movement forward, e.g.:
@@ -321,6 +324,9 @@
 .pr-30 {
   padding-right: 30px;
 }
+.pr-32 {
+  padding-right: 32px;
+}
 
 .pr-35 {
   padding-right: 35px;
@@ -416,6 +422,10 @@
 
 .pl-30 {
   padding-left: 30px;
+}
+
+.pl-32 {
+  padding-left: 32px;
 }
 
 .pl-35 {

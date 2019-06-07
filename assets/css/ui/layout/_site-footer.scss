@@ -27,9 +27,11 @@
         }
         .footer-social-links {
             float: right;
+            margin-top: 20px;
             @media screen and (max-width: $lap-start) {
                 float: none;
                 text-align: center;
+                margin-top: 0;
             }
             a {
                 img {

@@ -216,12 +216,12 @@ select {
     font-weight: 300;
     padding: .5em 1em;
     color: #000;
-    border: 1px solid #a086be;
+    border: 1px solid #c39bff;
     font-weight: 300;
     background-color: #fff;
     position: sticky;
-    -webkit-border-radius:0; 
-    border-radius:0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
 }
 
 .contact-form {
@@ -248,6 +248,8 @@ input[type=submit] {
     float: right;
     border: none;
     background: #000;
+    -webkit-border-radius: 0;
+    border-radius: 0;
     float: initial;
 }
 

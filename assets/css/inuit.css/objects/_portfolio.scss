@@ -33,6 +33,7 @@
   bottom: 0;
   right: 0;
   opacity: 0;
+
   -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
@@ -95,10 +96,9 @@
   font-size: 14px !important;
 }
 
-.fadeIn-bottom {
-  top: 80%;
-}
-
+// .fadeIn-bottom {
+//   top: 80%;
+// }
 @media only screen and (max-width: $desk-start) {
   #team-grid>div {
     padding-left: 0;
@@ -109,131 +109,162 @@
   background-color: #000;
 }
 
-.filter-containter{
+.filter-containter {
   padding-bottom: 30px;
-  margin: 0 20px;
-  // border-bottom: 1px solid #000;
+  margin: 0 20px; // border-bottom: 1px solid #000;
+  @media only screen and (max-width: $desk-start) {
+    display: none;
+  }
 }
 
-.filter-toggle{
+.filter-toggle {
   font-size: 18px;
   font-weight: bold;
 }
 
 #filters {
-	padding:0;
-	list-style:none;
-	    display: inline-block;
-    margin-bottom: -8px;
-     overflow: hidden;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  margin-bottom: -8px;
+  overflow: hidden;
 }
 
-	#filters li {
-		float:left;
-		font-size: 16px;
-		&:hover{
-		  span{
-		    color: #A186BE;
-		  }
-		}
-	}
-	
-	#filters li span {
-		display: block;
-		margin:5px 20px;		
-		text-decoration:none;
-		color:#000;
-		cursor: pointer;
-	}
-	
-	@media only screen and (max-width: $palm-end){
-	  #filters li span {
-		margin:5px 10px;
-	  }
-	}
-	
-	#filters li span.active {
-		background: #00ff67;
-		color:#fff;
-	}
-	
-	
-	#filter-menu {
-	  font-size: 20px;
-	  display: inline;
-	  float: left;
-	  padding-right: 10px;
-	  cursor: pointer;
-	}
-	
-	.nav-wrapper {
-    list-style: none;
+#filters li {
+  float: left;
+  font-size: 16px;
+  &:hover {
+    span {
+      color: #c39bff;
+    }
+  }
+}
+
+#filters li span {
+  display: block;
+  margin: 5px 20px;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: $palm-end) {
+  #filters li span {
+    margin: 5px 10px;
+  }
+}
+
+#filters li span.active {
+  background: #00ff67;
+  color: #fff;
+}
+
+#filter-menu {
+      font-size: 20px;
+    display: inline;
     float: left;
-}
-
-.nav-wrapper>li {
-    float: right;
-    overflow: hidden;
-    font-family: "Karla", sans-serif !important;
-    font-size: 20px;
-    letter-spacing: normal;
-}
-
-#portfoliolist .portfolio {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    display: none;
-    overflow: hidden;
-}
-
-#nav-bar li span.active {
-    color: #a186be;
-}
-
-#nav-bar li:hover span {
-    color: #A186BE;
-}
-
-#nav-bar li span {
+    padding-right: 6px;
     cursor: pointer;
 }
 
+.nav-wrapper {
+  list-style: none;
+  float: left;
+}
+
+.nav-wrapper>li {
+  float: right;
+  overflow: hidden;
+  font-family: "Karla", sans-serif !important;
+  font-size: 20px;
+  letter-spacing: normal;
+}
+
+#portfoliolist .portfolio {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  display: none;
+  overflow: hidden;
+}
+
+#nav-bar li span.active {
+  color: #c39bff;
+}
+
+#nav-bar li:hover span {
+  color: #c39bff;
+}
+
+#nav-bar li span {
+  cursor: pointer;
+}
+
 #nav-bar {
-    list-style: none;
-    margin-right: -885px;
-    transition: 0.3s;
+  list-style: none;
+  margin-right: -885px;
+  transition: 0.3s;
 }
 
 .nav-wrapper.active #nav-bar {
-    margin-right: 0;
-    transition: 0.3s;
+  margin-right: 0;
+  transition: 0.3s;
 }
 
 #nav-bar>li {
-        float: left;
-    font-size: 15px;
-    margin: 4px 20px
+  float: left;
+  font-size: 15px;
+  margin: 4px 20px
 }
 
 #menu::after {
-    display: block;
-    content: "+";
-    width: 10px;
-    font-size: 20px;
-    height: 20px;
-    color: #a086be;
+  display: block;
+  content: "";
+  background: url(../../assets/img/plus-sign.svg) no-repeat bottom;
+      width: 16px;
+    font-size: 18px;
+    height: 16px;
+    margin-left: -3px;
+    margin-top: 4.5px;
+    color: #c39bff;
     font-weight: 400;
     cursor: pointer;
 }
 
 .nav-wrapper.active>#menu::after {
-    content: "-";
-    color: #a086be;
+  background: url(../../assets/img/minus-sign.svg) no-repeat bottom;
 }
 
 
 .black-border {
-    border-top: 2px solid #000;
-    margin: 0 20px;
+  border-top: 2px solid #000;
+  margin: 0 20px;
+}
+
+.lightbox .lb-image {
+  border: none !important;
+  border-radius: 0px !important;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin-top: 50px;
+  @media only screen and (max-width: $palm-end) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

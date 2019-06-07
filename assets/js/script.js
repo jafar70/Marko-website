@@ -25,10 +25,17 @@ var swiper = new Swiper('.swiper-container', {
       direction: 'horizontal',
       centeredSlides: true,
       spaceBetween: 30,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+      navigation: {
+        nextEl: '.next',
+        prevEl: '.previous',
       },
+      breakpoints: {
+        960: {
+          slidesPerView: 1,
+          spaceBetween: 15,
+          centeredSlides: false,
+        }
+        },
     });
     
 
@@ -40,3 +47,8 @@ $('#filter-menu').click(function(){
 	$('.nav-wrapper').toggleClass('active');
 });
 
+$(document).ready(function() {
+            $(".back-link").hover(function(){
+              $(this).find(".back-button").animate({width: "toggle"});
+            });
+        });

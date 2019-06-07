@@ -22,11 +22,27 @@ section {
     // filter: invert(61%) sepia(57%) saturate(259%) hue-rotate(226deg) brightness(84%) contrast(82%);
 }
 
+.back-link,
+.back-link:visted {
+    text-decoration: none;
+    color: #c39bff;
+}
+
 #about-me {
     padding-top: 40px;
+    .back-button {
+        font-size: 15px;
+        display: block;
+        margin-bottom: 21px;
+        margin-left: 33px;
+        margin-top: -18px;
+        color: #c39bff;
+        display: none;
+    }
     .back-arrow {
-        width: 45px;
+        width: 35px;
         margin-left: -7px;
+        display: inline-block;
         transform: rotate(180deg);
     }
     h3 {
@@ -35,18 +51,26 @@ section {
         font-size: 20px;
         text-transform: uppercase;
         border-top: 1px solid #000;
-        margin: 17px 20px 0 0;
-        padding-top: 20px;
+        margin: 0px 20px 0 0;
+        padding-top: 22px;
+        @media screen and (max-width: $desk-start) {
+            margin: 17px 0 20px 0;
+        }
     }
     .about-me-text {
         border-top: 1px solid #000;
         padding-top: 20px;
-        margin-top: 39.5px;
+        margin-top: 38.4px;
         p {
             font-size: 16px;
         }
         img {
             margin: 30px 0 60px;
+        }
+        @media screen and (max-width: $desk-start) {
+            border-top: none;
+            margin-top: 0;
+            padding-top: 0;
         }
     }
 }
@@ -56,9 +80,19 @@ section {
     @media screen and (max-width: $desk-start) {
         padding: 40px 0 40px;
     }
+    .back-button {
+        font-size: 15px;
+        display: block;
+        margin-bottom: 21px;
+        margin-left: 33px;
+        margin-top: -18px;
+        color: #c39bff;
+        display: none;
+    }
     .back-arrow {
-        width: 45px;
+        width: 35px;
         margin-left: -7px;
+        display: inline-block;
         transform: rotate(180deg);
     }
     h3 {
@@ -67,28 +101,47 @@ section {
         font-size: 20px;
         text-transform: uppercase;
         border-top: 1px solid #000;
-        margin: 17px 20px 0 0;
+        margin: 0px 20px 0 0;
         padding-top: 22px;
         @media screen and (max-width: $desk-start) {
-            margin: 17px 0 0 0;
+            margin: 17px 0 20px 0;
         }
     }
     .contact-form-container {
         border-top: 1px solid #000;
         padding-top: 20px;
-        margin: 40px 0;
+        margin: 38px 0;
+        @media screen and (max-width: $desk-start) {
+            border-top: none;
+            margin-top: 0;
+            padding-top: 0;
+        }
         h4 {
             margin-bottom: 40px;
-            font-family: 'Karla', sans-serif !important;
+            @media screen and (max-width: $desk-start) {
+                margin-bottom: 30px;
+            }
+            font-family: 'Karla',
+            sans-serif !important;
         }
     }
 }
 
 #portfolio-single-body {
     padding-top: 40px;
+    .back-button {
+        font-size: 15px;
+        display: block;
+        margin-bottom: 21px;
+        margin-left: 33px;
+        margin-top: -18px;
+        color: #c39bff;
+        display: none;
+    }
     .back-arrow {
-        width: 45px;
+        width: 35px;
         margin-left: -7px;
+        display: inline-block;
         transform: rotate(180deg);
     }
     h3 {
@@ -97,18 +150,34 @@ section {
         font-size: 20px;
         text-transform: uppercase;
         border-top: 1px solid #000;
-        margin: 18px 20px 0 0;
+        margin: 0px 20px 0 0;
         padding-top: 22px;
         @media screen and (max-width: $desk-start) {
-            margin: 17px 0 0 0;
+            margin: 17px 0 20px 0;
         }
     }
     .portfolio-text {
         border-top: 1px solid #000;
         padding-top: 20px;
-        margin-top: 23.8px;
+        margin-top: 21.3px;
+        @media screen and (max-width: $desk-start) {
+            border-top: none;
+            margin-top: 0;
+            padding-top: 0;
+        }
+        .soundcloud-link {
+            margin-top: 50px;
+            @media screen and (max-width: $desk-start) {
+                margin-bottom: 30px;
+            }
+        }
         p {
             font-size: 15px;
+        }
+        h4 {
+            @media screen and (max-width: $desk-start) {
+                font-size: 18px;
+            }
         }
         img {
             margin: 30px 0 60px;
@@ -117,15 +186,19 @@ section {
     .portfolio-category {
         ul {
             list-style-type: none;
+            @media screen and (max-width: $desk-start) {
+                display: none;
+            }
             li {
                 font-size: 15px;
                 display: inline-block;
                 margin-right: 20px;
             }
+            
         }
     }
     .next-post-link {
-        color: #a086be;
+        color: #c39bff;
         position: relative;
         &:after {
             background: url(../../assets/img/Arrowicon-P-08.svg) no-repeat bottom;
@@ -139,7 +212,7 @@ section {
     }
 
     .previous-post-link {
-        color: #a086be;
+        color: #c39bff;
         position: relative;
         &:before {
             background: url(../../assets/img/ArrowIconLeft-18.svg) no-repeat bottom;
@@ -182,6 +255,9 @@ section {
     padding-bottom: 20px;
     .home-portfolio-container {
         padding: 0 20px 0 40px;
+        @media only screen and (max-width: $desk-start) {
+            padding: 0 40px 0 40px;
+        }
         @media only screen and (max-width: $lap-start) {
             padding: 0 20px;
         }
@@ -200,5 +276,5 @@ section {
     position: absolute;
     display: inline-block !important;
     top: -35px;
-    margin-left: 10px;
+    margin-left: 2%;
 }
